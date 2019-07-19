@@ -243,3 +243,18 @@ input {
 
 .signup {
   flex-direction: column; }
+
+.header .button {
+  max-width: 15% !important;
+  text-align: center;
+  font-size: 1rem !important; }
+
+.blog div {
+  flex-direction: column; }
+
+.blog textarea {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.15rem; }

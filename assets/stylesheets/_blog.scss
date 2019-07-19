@@ -1,0 +1,18 @@
+.header {
+    .button {
+        max-width: 15% !important;
+        text-align: center;
+        font-size: 1rem !important;
+    }
+}
+
+.blog {
+    div {
+        flex-direction: column;
+    }
+
+    textarea {
+        @include border-radius(0.5rem);
+        padding: 0.15rem;
+    }
+}

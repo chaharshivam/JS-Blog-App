@@ -8,6 +8,12 @@ const GOTO_SIGNUP = document.querySelector('.goto-signup');
 const L_WRAPPER = document.querySelector('.login-wrapper');
 const S_WRAPPER = document.querySelector('.signup-wrapper');
 
+let currentUser = {
+    username: '',
+    password: '',
+    blogs: [],
+    isActive: false
+};
 
 const USERS = JSON.parse(localStorage.getItem('USERS')) || [];
 // Schema
@@ -25,7 +31,9 @@ function authenticate(event) {
     
     if (verified.length) {
         VERIFY.setAttribute('href', 'homepage.html');
-        console.log(event);
+        currentUser.username = L_USERNAME.value;
+        currentUser.value = L_PASSWORD.value;
+        currentUser.isActive = true;
     } else {
         alert('Wrong username/password!!');
     }
@@ -46,7 +54,9 @@ function addUser(event) {
     if (S_USERNAME.value.trim() && S_PASSWORD.value.trim()) {
         const newUser = {
             username: S_USERNAME.value,
-            password: S_PASSWORD.value
+            password: S_PASSWORD.value,
+            blogs: [],
+            isActive: true
         }
     
         const verified = USERS.filter( (elm) => elm.username == newUser.username);
