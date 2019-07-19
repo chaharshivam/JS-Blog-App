@@ -186,6 +186,10 @@ input {
 
 .header {
   box-shadow: 0 10px 15px -10px rgba(68, 68, 68, 0.3); }
+  .header .button {
+    max-width: 15% !important;
+    text-align: center;
+    font-size: 1rem !important; }
 
 .logo {
   font-family: "Work Sans", sans-serif;
@@ -243,11 +247,6 @@ input {
 
 .signup {
   flex-direction: column; }
-
-.header .button {
-  max-width: 15% !important;
-  text-align: center;
-  font-size: 1rem !important; }
 
 .blog div {
   flex-direction: column; }

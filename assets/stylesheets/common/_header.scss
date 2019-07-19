@@ -1,5 +1,11 @@
 .header {
     box-shadow: $shadow;
+
+    .button {
+        max-width: 15% !important;
+        text-align: center;
+        font-size: 1rem !important;
+    }
 }
 
 .logo {
