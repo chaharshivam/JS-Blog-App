@@ -1,0 +1,15 @@
+.header {
+    box-shadow: $shadow;
+}
+
+.logo {
+    font-family: $WorkSans;
+    color: $blackSecondary;
+    &:hover {
+        color: $blackTertiary;
+    }
+}
+
+.logo-heading {
+    font-size: 2.5rem;
+}

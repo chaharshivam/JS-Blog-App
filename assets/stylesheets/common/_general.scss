@@ -3,3 +3,33 @@
     margin: 0 auto;
     padding: 2rem;
 }
+
+body {
+    font-family: $Roboto;
+    background: $lightGrey;
+}
+
+input {
+    @include border-radius(1rem);
+    padding: 1rem 2rem;;
+    margin: 0.75rem 0.25rem;
+    font-family: $Roboto;
+
+    &:focus {
+        box-shadow: $shadow;
+        color: $grey;
+    }
+}
+
+button {
+    @include border-radius(0.5rem);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.15rem;
+    font-family: $Roboto;
+    margin-top: 1rem;
+    &:hover {
+        background: $grey;
+        box-shadow: $shadow;
+        color: $lightGrey;
+    }
+}

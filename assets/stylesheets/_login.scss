@@ -1,0 +1,33 @@
+.form-control {
+    @include border-radius(0.5rem);
+    flex-direction: column;
+    font-family: $Roboto;
+    min-width: 35%;
+    max-width: 40%;
+    box-shadow: $shadow;
+    padding-bottom: 2rem;
+}
+
+.form-header {
+    @include border-radius(0.5rem);
+    background: $grey;
+    color: $lightGrey;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.login {
+    flex-direction: column;
+
+    a {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+        text-align: right;
+    }
+}
