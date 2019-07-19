@@ -21,14 +21,18 @@ input {
     }
 }
 
-button {
+.button {
     @include border-radius(0.5rem);
-    padding: 0.75rem 1.5rem;
-    font-size: 1.15rem;
+    width: 40% !important;
+    text-align: center !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1.25rem !important;
+    background: $blackSecondary;
+    color: $lightGrey;
     font-family: $Roboto;
     margin-top: 1rem;
     &:hover {
-        background: $grey;
+        background: $blackTertiary;
         box-shadow: $shadow;
         color: $lightGrey;
     }

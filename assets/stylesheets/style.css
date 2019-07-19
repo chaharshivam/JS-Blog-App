@@ -166,17 +166,21 @@ input {
     box-shadow: 0 10px 15px -10px rgba(68, 68, 68, 0.3);
     color: #444444; }
 
-button {
+.button {
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   border-radius: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.15rem;
+  width: 40% !important;
+  text-align: center !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 1.25rem !important;
+  background: #222;
+  color: #eee;
   font-family: "Roboto", sans-serif;
   margin-top: 1rem; }
-  button:hover {
-    background: #444444;
+  .button:hover {
+    background: #666;
     box-shadow: 0 10px 15px -10px rgba(68, 68, 68, 0.3);
     color: #eee; }
 
@@ -191,6 +195,9 @@ button {
 
 .logo-heading {
   font-size: 2.5rem; }
+
+.login-wrapper {
+  display: block; }
 
 .form-control {
   -webkit-border-radius: 0.5rem;
@@ -225,3 +232,14 @@ button {
     padding: 0.5rem;
     font-size: 0.75rem;
     text-align: right; }
+
+.goto-signup {
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%; }
+
+.signup-wrapper {
+  display: none; }
+
+.signup {
+  flex-direction: column; }

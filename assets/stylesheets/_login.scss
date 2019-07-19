@@ -1,3 +1,7 @@
+.login-wrapper {
+    display: block;
+}
+
 .form-control {
     @include border-radius(0.5rem);
     flex-direction: column;
@@ -30,4 +34,18 @@
         font-size: 0.75rem;
         text-align: right;
     }
+}
+
+.goto-signup {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.signup-wrapper {
+    display: none;
+}
+
+.signup {
+    flex-direction: column;
 }

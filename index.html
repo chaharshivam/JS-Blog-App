@@ -29,22 +29,38 @@
         <!-- Main -->
         <main class="main">
             <section class="wrapper flex-center">
-                <div class="form-control flex-center">
+                <div class="login-wrapper form-control flex-center">
                     <header class="form-header">
                         <h2>Login</h2>
                     </header>
-                    <form action="" class="login flex-center">
-                        <input type="text" placeholder="username">
-                        <input type="password" placeholder="password">
+                    <form action="#" class="login flex-center">
+                        <input id="login-username" type="text" placeholder="username" required>
+                        <input id="login-password" type="password" placeholder="password" required>
                         <a href="#">Forgot username/password?</a>
-                        <button>login</button>
+                        <a id="verify-login" href="#" class="button">
+                            login
+                        </a>
                     </form>
-                    <footer></footer>
+                    <footer>
+                        <a href="#" class="goto-signup">Signup</a>
+                    </footer>
                 </div>
-                <div class="signup"></div>
+                <div class="signup-wrapper form-control flex-center">
+                    <header class="form-header">
+                        <h2>Signup</h2>
+                    </header>
+                    <form action="#" class="signup flex-center">
+                        <input id="signup-username" type="text" placeholder="username" required>
+                        <input id="signup-password" type="password" placeholder="password" required>
+                        <a id="add-user" href="#" class="button">
+                            signup
+                        </a>
+                    </form>
+                </div>
             </section>
         </main>
         <!-- Footer -->
         <footer></footer>
+        <script src="./assets/scripts/login.js"></script>
     </body>
 </html>
