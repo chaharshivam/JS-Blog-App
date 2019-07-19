@@ -11,14 +11,39 @@
         <link 
             href="https://fonts.googleapis.com/css?family=Roboto:400,500|Rosarivo:400i|Work+Sans:700&display=swap" 
             rel="stylesheet" 
-        />
+            />
+        <!-- <script src="./assets/scripts/login.js"></script> -->
     </head>
     <body>
         <!-- Header -->
-        <header></header>
+        <header class="header">
+            <div class="wrapper flex-between">
+                <a class="logo" href="homepage.html">
+                    <h1 class="logo-heading">Vanilla Blog</h1>
+                </a>
+                <button id="logout" class="button">
+                    Logout
+                </button>
+            </div>
+        </header>
         <!-- Main -->
-        <main></main>
+        <main>
+            <section class="blog">
+                <div class="wrapper flex-center">
+                    <form action="#" class="blog-title">
+                        <h4>title</h4>
+                        <input type="text" name="" id="title-input">
+                        <h4>content</h4>
+                        <textarea id="blog-content" cols="50" rows="20"></textarea>
+                        <button class="button add-blog">
+                            Post
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
         <!-- Footer -->
         <footer></footer>
+        <script src="./assets/scripts/blog.js"></script>
     </body>
 </html>
