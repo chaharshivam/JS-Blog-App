@@ -237,6 +237,9 @@ input {
     font-size: 0.75rem;
     text-align: right; }
 
+.login-button {
+  width: fit-content !important; }
+
 .goto-signup {
   margin: 1rem 0;
   text-align: center;
