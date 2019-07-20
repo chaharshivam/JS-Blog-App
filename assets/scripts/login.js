@@ -33,7 +33,15 @@ function authenticate(event) {
         VERIFY.setAttribute('href', 'homepage.html');
         currentUser.username = L_USERNAME.value;
         currentUser.value = L_PASSWORD.value;
-        currentUser.isActive = true;
+
+        USERS.forEach(user => {
+            if(currentUser.username == user.username && !currentUser.isActive) {
+                user.isActive = true;
+                return;
+            }
+        });
+        updateLocal(USERS);
+
     } else {
         alert('Wrong username/password!!');
     }

@@ -1,0 +1,17 @@
+.myblog {
+    @include border-radius(0.5rem);
+    padding: 1rem;
+    font-family: $Rosarivo;
+    box-shadow: $shadow;
+    margin-bottom: 1rem;
+
+    header {
+        padding: 1rem;
+    }
+}
+
+.read {
+    width: 10% !important;
+    font-size: 1rem !important;
+    padding: 0.5rem !important;
+}

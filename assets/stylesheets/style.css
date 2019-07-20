@@ -171,7 +171,6 @@ input {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   border-radius: 0.5rem;
-  width: 40% !important;
   text-align: center !important;
   padding: 0.75rem 1.5rem !important;
   font-size: 1.25rem !important;
@@ -187,9 +186,10 @@ input {
 .header {
   box-shadow: 0 10px 15px -10px rgba(68, 68, 68, 0.3); }
   .header .button {
-    max-width: 15% !important;
     text-align: center;
-    font-size: 1rem !important; }
+    font-size: 0.75rem !important; }
+  .header .header-button {
+    max-width: 50% !important; }
 
 .logo {
   font-family: "Work Sans", sans-serif;
@@ -247,6 +247,23 @@ input {
 
 .signup {
   flex-direction: column; }
+
+.myblog {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: "Rosarivo", serif;
+  box-shadow: 0 10px 15px -10px rgba(68, 68, 68, 0.3);
+  margin-bottom: 1rem; }
+  .myblog header {
+    padding: 1rem; }
+
+.read {
+  width: 10% !important;
+  font-size: 1rem !important;
+  padding: 0.5rem !important; }
 
 .blog div {
   flex-direction: column; }
