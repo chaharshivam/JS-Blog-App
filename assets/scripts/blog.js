@@ -4,13 +4,12 @@ const ADD_BLOG = document.querySelector('.add-blog');
 
 const USERS = JSON.parse(localStorage.getItem('USERS')) || [];
 
-currentUser = USERS.reduce( (acc, curr) => {
+let currentUser = USERS.reduce( (acc, curr) => {
     if (curr.isActive) {
         return curr;
     }
-});
-
-// console.log(currentUser);
+    return acc;
+}, {});
 
 function updateLocal(DATA = []) {
     localStorage.clear();
@@ -31,11 +30,11 @@ function blogTitle(event) {
 
     const blog = {
         title: BLOG_TITLE.value.trim(),
-        content: BLOG_CONTENT.value.trim()
+        content: BLOG_CONTENT.value.trim(),
+        isReading: false
     };
     currentUser.blogs.push(blog);
     updateUser(currentUser);
-    console.log(USERS);
 }
 
 ADD_BLOG.addEventListener('click', blogTitle);
